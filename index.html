@@ -55,13 +55,17 @@
             .logo-name {
                 float: left;
                 position: absolute;
-                color: #FFFFFF;
+                color: red;
                 font-family: hacked;
                 font-weight: normal;
                 font-style: normal;
                 font-size: 50pt;
                 margin-top: 40px;
                 margin-left: 150px;
+            }
+            .logo-name:hover {
+                color: green;
+                text-decoration: line-through;
             }
             .logo-name-2 {
                 float: left;
@@ -73,6 +77,10 @@
                 font-size: 50pt;
                 margin-top: 35px;
                 margin-left: 145px;
+            }
+            .logo-name-2:hover {
+                color: blue;
+                text-decoration: underline;
             }
             ul {
                 list-style-type: none;
@@ -108,7 +116,7 @@
                 color: #FFFFFF;
             }
             hr.hidden {
-                border-top: 100px;
+                border-top: 150px;
                 visibility: hidden;
             }
             .tagline {
@@ -120,6 +128,11 @@
                 vertical-align: middle;
                 padding-bottom: 30px;
                 padding-top: 30px;
+                letter-spacing: 5px;
+            }
+            .tagline:hover {
+                color: red;
+                text-decoration: line-through;
             }
             .content {
                 width: 60%;
@@ -180,17 +193,92 @@
                 margin-bottom: 0px;
                 margin-top: 0px;
             }
+            .product-name:hover {
+                color: red;
+                text-decoration: underline;
+            }
             .product-description {
                 font-family: aquire;
                 margin-right: 0px;
                 padding-right: 0px;
                 text-transform: uppercase;
                 text-align: justify;
+                line-height: 13pt;
+            }
+            #video iframe {
+                border: 0;
+                width: 1100px;
+                height: 500px;
+            }
+            .video-application {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+            #form-container {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-right: 100px;
+                margin-left: 100px;
+                padding: 0px 100px 0px 100px;
+                flex-wrap: wrap;
+                display: flex;
+                align-content: center;
+                align-items: center;
+            }
+            #form {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+            }
+            #email {
+                width: 100%;
+                border: none;
+                margin: auto;
+                padding: 10px 10px 10px 20px;
+                color: red;
+                background-color: #F2F2F2;
+                text-align: center;
+                vertical-align: middle;
+            }
+            input[type=text], select {
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            #submit {
+                width: 100%;
+                background-color: #000000;
+                color: white;
+                padding: 5px 0px 5px 0px;
+                margin: auto;
+                border: 2px solid white;
+                border-radius: 4px;
+                cursor: pointer;
+                font-family: hacked;
+                font-size: 20pt;
+                letter-spacing: 10px;
+            }
+            #submit:hover {
+                background-color: black;
+                color: red;
+                border: 2px solid red;
+            }
+            .divider {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                visibility: hidden;
             }
         </style>
     </head>
     <body id="main">
         <div id="container"> 
+            <!-- Start of Header -->
             <header id="header">
                 <img id="header-img" alt="SYSTEM ICT" src="images/logo.png">
                 <p class="logo-name"> WATCHDOGS </p>
@@ -198,14 +286,31 @@
                 <nav id="nav-bar"> 
                     <ul>
                         <li class="nav-link"> <a href="#negotiate"> PRICE </a> </li>
-                        <li class="nav-link"> <a href="#application"> APPLICATION </a> </li>
+                        <li class="nav-link"> <a href="#video"> APPLICATION </a> </li>
                         <li class="nav-link"> <a href="#about"> ABOUT </a> </li>
                     </ul>
                 </nav>
             </header>
+            <!-- End of Header -->
+            
+            <!-- Start of Tagline -->
             <div>
                 <p class="tagline"> &quot;Everything is connected, connection is power&quot; </p>
             </div>
+            <!-- End of Tagline -->
+            
+            <div id="form-container">
+                <form id="form">
+                    <input  type="text" id="email" name="email" 
+                            pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`
+                                     {|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
+                            placeholder="Enter your email here...">
+                    <hr class="divider">
+                    <input id="submit" type="submit" value="JOIN US">
+                </form>
+            </div>
+            
+            <!-- Start of About -->
             <div id="about" class="content">
                 <!-- DedSec About-->
                 <div class="row">
@@ -249,22 +354,14 @@
                         </p>
                     </div>
                 </div>
-                <hr class="hidden">
-                <!-- Prime_Eight About-->
-                <div class="row">
-                    <div class="column primeeight">
-                        <img src="images/primeeight.png" alt="Umeni-Zulu">
-                    </div>
-                    <div class="column primeeight">
-                        <p class="product-name"> PRIME_EIGHT </p>
-                        <p class="product-description"> 
-                             Led by Lenni, and are the rival hacker group to DedSec, whom DedSec is trying to 
-                             take down. They are amoral mercenaries (comparable to the Fixers) who sell data and 
-                             exploits to anyone who can pay them. 
-                        </p>
-                    </div>
-                </div>
             </div>
+            <!-- End of About -->
+            <hr class="hidden">
+            <!-- Start of Video -->
+            <div id="video" class="video-application">
+                <iframe src="https://www.youtube.com/embed/L20nioDjCxU" allow="accelerometer"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+            </div>
+            <!-- End of Video -->
         </div>
     </body>
 </html>
