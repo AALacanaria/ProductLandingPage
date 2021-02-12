@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> PRODUCT LANDING PAGE </title>
+        <title> WATCHDOGS | PRODUCT LANDING PAGE </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="images/logo.png" type="image/png" rel="shortcut icon">
         <style>
             #main {
                 margin: 0px 0px 0px 0px;
@@ -83,17 +84,113 @@
                 font-weight: normal;
                 font-style: normal;
             }
-            li a {
+            .nav-link {
                 display: block;
                 color: white;
                 text-align: center;
-                padding: 30px 80px;
-                text-decoration: none;
+                padding: 30px 40px;  
             }
-            li a:hover {
+            .nav-link a {
+                text-decoration: none;
+                color: #FFFFFF
+            }
+            nav-link a:hover {
                 background-color: transparent;
             }
-            
+            #about {
+                color: #FFFFFF;
+            }
+            hr.hidden {
+                border-top: 100px;
+                visibility: hidden;
+            }
+            .tagline {
+                color: #FFFFFF;
+                font-family: 'hacked';
+                    src: url(fonts/hacked-webfont.woff2) format('woff2'),
+                         url(fonts/hacked-webfont.woff) format('woff');
+                text-align: center;
+                font-size: 20pt;
+                position: relative;
+                vertical-align: middle;
+                padding-bottom: 30px;
+                padding-top: 30px;
+            }
+            .content {
+                width: 60%;
+                margin: 0px auto 0;
+                padding: 0px auto 0;
+                display: table;
+                box-sizing: border-box;
+            }
+            .row {
+                margin: 0px 0px 0px 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-right: 0px;
+            }
+            .column {
+                background: transparent !important;
+                border-color: transparent !important;
+                display: table-cell;
+                width: 60%;
+                margin: 0px auto 0;
+                padding: 0px 0px 0px 20px;
+                vertical-align: top !important;
+                border: none;
+            }
+            .dedsec {
+                position: relative;
+                width: 00%;
+            }
+            .dedsec img {
+                height: 150px;
+            }
+            .dedsec p {
+                font-family: 'aquire';
+                    src: url(fonts/aquire-bw0ox-webfont.woff2) format('woff2'),
+                         url(fonts/aquire-bw0ox-webfont.woff) format('woff'),
+                         url(fonts/Aquire-BW0ox.otf) format('otf');
+            }
+            .blumecorp {
+                position: relative;
+                width: 00%;
+            }
+            .blumecorp img {
+                height: 162px;
+            }
+            .blumecorp p {
+                font-family: 'aquire';
+                    src: url(fonts/aquire-bw0ox-webfont.woff2) format('woff2'),
+                         url(fonts/aquire-bw0ox-webfont.woff) format('woff'),
+                         url(fonts/Aquire-BW0ox.otf) format('otf');
+            }
+            .umenizulu {
+                position: relative;
+                width: 00%;
+            }
+            .umenizulu img {
+                height: 120px;
+            }
+            .umenizulu p {
+                font-family: 'aquire';
+                    src: url(fonts/aquire-bw0ox-webfont.woff2) format('woff2'),
+                         url(fonts/aquire-bw0ox-webfont.woff) format('woff'),
+                         url(fonts/Aquire-BW0ox.otf) format('otf');
+            }
+            .primeeight {
+                position: relative;
+                width: 00%;
+            }
+            .primeeight img {
+                height: 92px;
+            }
+            .primeeight p {
+                font-family: 'aquire';
+                    src: url(fonts/aquire-bw0ox-webfont.woff2) format('woff2'),
+                         url(fonts/aquire-bw0ox-webfont.woff) format('woff'),
+                         url(fonts/Aquire-BW0ox.otf) format('otf');
+            }
         </style>
     </head>
     <body id="main">
@@ -103,15 +200,115 @@
                 <p class="logo-name"> WATCHDOGS </p>
                 <p class="logo-name-2"> WATCHDOGS </p>
                 <nav id="nav-bar"> 
-                <ul>
-                    <li> <a href="#negotiate"> NEGOTIATE </a> </li>
-                    <li> <a href="#application"> APPLICATION </a> </li>
-                    <li> <a href="#about"> ABOUT </a> </li>
-                </ul>
+                    <ul>
+                        <li class="nav-link"> <a href="#negotiate"> PRICE </a> </li>
+                        <li class="nav-link"> <a href="#application"> APPLICATION </a> </li>
+                        <li class="nav-link"> <a href="#about"> ABOUT </a> </li>
+                    </ul>
                 </nav>
             </header>
-            HELLO WORLD
-            HELLO WORLD
+            <div>
+                <p class="tagline"> &quot;Everything is connected, connection is power&quot; </p>
+            </div>
+            <div id="about" class="content">
+                <!-- DedSec About-->
+                <div class="row">
+                    <div class="column dedsec">
+                        <img src="images/dedseclogo.png" alt="DedSec">
+                    </div>
+                    <div class="column dedsec">
+                        <p style="font-family: 'hacked';
+                                          src: url(fonts/hacked-webfont.woff2) format('woff2'),
+                                               url(fonts/hacked-webfont.woff) format('woff');
+                                  font-size: 25pt;
+                                  padding-bottom: 0px;
+                                  padding-top: 0px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;"> 
+                            DEDSEC
+                        </p>
+                        <p style="margin-right: 0px;
+                                  padding-right: 0px;"> 
+                            A secret hacking collective featured in the Watch Dogs series. They have a worldwide 
+                            presence and millions of followers, with their goal being to expose the corruption in 
+                            the common world, including large corporations.
+                        </p>
+                    </div>
+                </div>
+                <hr class="hidden">
+                <!-- Blume Corp About-->
+                <div class="row">
+                    <div class="column blumecorp">
+                        <img src="images/blumecorporation.png" alt="Blume Corporation">
+                    </div>
+                    <div class="column blumecorp">
+                        <p style="font-family: 'hacked';
+                                          src: url(fonts/hacked-webfont.woff2) format('woff2'),
+                                               url(fonts/hacked-webfont.woff) format('woff');
+                                  font-size: 25pt;
+                                  padding-bottom: 0px;
+                                  padding-top: 0px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;"> 
+                            BLUME CORPORATION
+                        </p>
+                        <p style="margin-right: 0px;
+                                  padding-right: 0px;"> 
+                            The communications technology company that developed CTOS as well as its iterations, 
+                            and is responsible for their operation, maintenance and advancement. 
+                        </p>
+                    </div>
+                </div>
+                <hr class="hidden">
+                <!-- Umeni-Zulu About-->
+                <div class="row">
+                    <div class="column umenizulu">
+                        <img src="images/umenizulu.png" alt="Umeni-Zulu">
+                    </div>
+                    <div class="column umenizulu">
+                        <p style="font-family: 'hacked';
+                                          src: url(fonts/hacked-webfont.woff2) format('woff2'),
+                                               url(fonts/hacked-webfont.woff) format('woff');
+                                  font-size: 25pt;
+                                  padding-bottom: 0px;
+                                  padding-top: 0px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;"> 
+                            Umeni-Zulu
+                        </p>
+                        <p style="margin-right: 0px;
+                                  padding-right: 0px;"> 
+                            better known as Umeni Security Corps or Umeni Corporation, is a private security 
+                            company and faction. 
+                        </p>
+                    </div>
+                </div>
+                <hr class="hidden">
+                <!-- Prime_Eight About-->
+                <div class="row">
+                    <div class="column primeeight">
+                        <img src="images/primeeight.png" alt="Umeni-Zulu">
+                    </div>
+                    <div class="column primeeight">
+                        <p style="font-family: 'hacked';
+                                          src: url(fonts/hacked-webfont.woff2) format('woff2'),
+                                               url(fonts/hacked-webfont.woff) format('woff');
+                                  font-size: 25pt;
+                                  padding-bottom: 0px;
+                                  padding-top: 0px;
+                                  margin-bottom: 0px;
+                                  margin-top: 0px;"> 
+                            Prime_Eight
+                        </p>
+                        <p style="margin-right: 0px;
+                                  padding-right: 0px;"> 
+                             Led by Lenni, and are the rival hacker group to DedSec, whom DedSec is trying to 
+                             take down. They are amoral mercenaries (comparable to the Fixers) who sell data and 
+                             exploits to anyone who can pay them. 
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
